@@ -1,0 +1,186 @@
+11:50:43.221 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 25076 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+11:50:43.225 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+11:50:47.555 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:50:47.561 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:50:47.561 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:50:47.678 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:50:49.575 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:50:50.624 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:50:50.654 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:50:50.708 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:50:50.854 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+11:50:50.856 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+11:50:50.870 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:50:50.892 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 8.329 seconds (JVM running for 10.0)
+11:57:24.229 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:57:25.544 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+12:35:32.056 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 29432 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+12:35:32.058 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+12:35:33.550 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:35:33.556 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:35:33.556 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+12:35:33.678 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:35:34.809 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:35:35.403 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:35:35.417 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:35:35.449 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:35:35.564 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+12:35:35.565 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+12:35:35.577 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:35:35.601 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.847 seconds (JVM running for 4.903)
+12:36:10.280 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:36:11.372 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+14:00:13.720 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 31300 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+14:00:13.722 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+14:00:17.355 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:00:17.361 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:00:17.361 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:00:17.501 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:00:19.094 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:00:19.929 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:00:19.953 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:00:19.997 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:00:20.143 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+14:00:20.144 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+14:00:20.158 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:00:20.180 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 7.02 seconds (JVM running for 8.853)
+14:00:42.408 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:00:45.114 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+14:33:10.593 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 30596 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+14:33:10.595 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+14:33:13.627 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:33:13.640 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:33:13.641 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:33:13.761 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:33:15.492 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:33:16.266 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:33:16.281 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:33:16.326 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:33:16.449 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+14:33:16.451 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+14:33:16.482 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:33:16.504 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 6.466 seconds (JVM running for 8.008)
+14:33:39.750 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:33:41.063 [http-nio-8080-exec-6] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+14:35:24.883 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 30652 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+14:35:24.886 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+14:35:26.274 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:35:26.280 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:35:26.280 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:35:26.414 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:35:27.443 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:35:28.034 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:35:28.048 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:35:28.092 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:35:28.219 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+14:35:28.221 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+14:35:28.233 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:35:28.261 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.722 seconds (JVM running for 4.795)
+14:35:44.435 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:35:45.598 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+14:55:25.196 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 32368 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+14:55:25.198 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+14:55:27.985 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:55:27.991 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:55:27.991 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:55:28.113 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:55:29.482 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:55:30.154 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:55:30.169 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:55:30.207 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:55:30.311 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+14:55:30.312 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+14:55:30.325 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:55:30.346 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 5.608 seconds (JVM running for 6.958)
+14:55:43.297 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:55:45.738 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+15:03:33.086 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 32764 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+15:03:33.089 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+15:03:35.636 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:03:35.642 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:03:35.642 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:03:35.765 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:03:37.087 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:03:37.689 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:03:37.712 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:03:37.743 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:03:37.852 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+15:03:37.853 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+15:03:37.866 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:03:37.887 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 5.146 seconds (JVM running for 6.499)
+15:06:29.772 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:06:30.972 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+15:12:43.142 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 30628 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+15:12:43.145 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+15:12:45.725 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:12:45.743 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:12:45.743 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:12:45.930 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:12:47.628 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:12:48.336 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:12:48.353 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:12:48.386 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:12:48.500 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+15:12:48.502 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+15:12:48.515 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:12:48.541 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 5.816 seconds (JVM running for 7.187)
+15:13:32.376 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:13:33.350 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+15:24:22.388 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 6856 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+15:24:22.399 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+15:24:24.042 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:24:24.049 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:24:24.050 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:24:24.217 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:24:25.987 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:24:26.627 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:24:26.640 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:24:26.668 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:24:50.790 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 25244 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+15:24:50.792 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+15:24:52.163 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:24:52.169 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:24:52.169 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:24:52.284 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:24:53.359 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:24:53.927 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:24:53.940 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:24:53.968 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:24:54.068 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+15:24:54.070 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+15:24:54.081 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:24:54.101 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.686 seconds (JVM running for 4.763)
+15:25:25.872 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:25:26.971 [http-nio-8080-exec-3] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+15:49:09.712 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 30552 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+15:49:09.714 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+15:49:12.611 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:49:12.617 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:49:12.617 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:49:12.737 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:49:14.150 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:49:15.023 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:49:15.052 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:49:15.082 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:49:15.189 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+15:49:15.190 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+15:49:15.202 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:49:15.222 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 6.101 seconds (JVM running for 7.545)
+15:49:23.921 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:49:25.003 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+20:12:09.037 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 31652 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+20:12:09.039 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+20:12:12.953 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:12:12.961 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:12:12.961 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:12:13.091 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:12:15.109 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20:12:16.152 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+20:12:16.167 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+20:12:16.227 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+20:12:16.361 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+20:12:16.363 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+20:12:16.376 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+20:12:16.400 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 8.004 seconds (JVM running for 10.064)
+20:12:31.965 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:12:33.199 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited

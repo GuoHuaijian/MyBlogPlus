@@ -1,0 +1,264 @@
+11:19:11.283 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 63236 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+11:19:11.294 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+11:19:15.513 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:19:15.520 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:19:15.520 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:19:15.658 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:19:17.893 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:19:19.065 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:19:19.095 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:19:19.159 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:19:19.362 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+11:19:19.363 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+11:19:19.379 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:19:19.406 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 8.929 seconds (JVM running for 11.17)
+11:21:24.074 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:21:24.432 [http-nio-8080-exec-4] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:21:24.433 [http-nio-8080-exec-4] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+11:24:29.731 [http-nio-8080-exec-16] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+12:31:43.274 [lettuce-nioEventLoop-4-4] INFO  i.l.c.p.CommandHandler - [log,219] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+12:31:43.521 [lettuce-eventExecutorLoop-1-6] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+12:31:48.226 [lettuce-nioEventLoop-4-7] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,177] - Reconnected to localhost:6379
+12:51:56.140 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 39976 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+12:51:56.142 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+12:51:59.483 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:51:59.493 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:51:59.493 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+12:51:59.702 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:52:02.002 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:52:02.919 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:52:02.949 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:52:03.001 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:52:03.143 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+12:52:03.145 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+12:52:03.161 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:52:03.184 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 7.559 seconds (JVM running for 9.168)
+12:52:21.946 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 67056 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+12:52:21.949 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+12:52:23.311 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:52:23.318 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:52:23.318 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+12:52:23.436 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:52:24.499 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:52:25.086 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:52:25.099 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:52:25.127 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:52:25.239 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+12:52:25.240 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+12:52:25.251 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:52:25.275 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.671 seconds (JVM running for 4.778)
+12:53:13.117 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 60844 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+12:53:13.119 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+12:53:14.467 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:53:14.474 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:53:14.474 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+12:53:14.594 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:53:15.665 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:53:16.243 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:53:16.256 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:53:16.285 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:53:16.389 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+12:53:16.390 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+12:53:16.402 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:53:16.422 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.613 seconds (JVM running for 4.764)
+12:53:45.580 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:53:48.234 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+12:53:48.710 [http-nio-8080-exec-2] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:53:48.712 [http-nio-8080-exec-2] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+13:26:50.375 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 65952 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+13:26:50.377 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+13:26:52.729 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+13:26:52.736 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:26:52.737 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+13:26:52.859 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:26:54.257 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13:26:55.192 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+13:26:55.226 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+13:26:55.259 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+13:26:55.417 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+13:26:55.419 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+13:26:55.434 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+13:26:55.460 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 5.526 seconds (JVM running for 6.946)
+13:27:10.249 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:27:11.266 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+13:27:11.581 [http-nio-8080-exec-1] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+13:27:11.583 [http-nio-8080-exec-1] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+13:41:30.806 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 67396 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+13:41:30.809 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+13:41:32.187 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+13:41:32.194 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:41:32.194 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+13:41:32.313 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:41:33.366 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13:41:33.950 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+13:41:33.963 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+13:41:33.992 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+13:41:34.101 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+13:41:34.102 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+13:41:34.114 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+13:41:34.135 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.621 seconds (JVM running for 4.726)
+13:42:27.227 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:42:29.220 [http-nio-8080-exec-3] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+13:42:29.637 [http-nio-8080-exec-3] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+13:42:29.639 [http-nio-8080-exec-3] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+13:42:35.135 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,219] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+13:42:35.239 [lettuce-eventExecutorLoop-1-3] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+13:42:37.943 [lettuce-nioEventLoop-4-3] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,177] - Reconnected to localhost:6379
+14:43:28.635 [lettuce-nioEventLoop-4-3] INFO  i.l.c.p.CommandHandler - [log,219] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+14:43:28.639 [lettuce-eventExecutorLoop-1-2] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+14:43:32.244 [lettuce-nioEventLoop-4-5] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,177] - Reconnected to localhost:6379
+16:27:28.432 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 55372 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+16:27:28.434 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+16:27:31.303 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:27:31.310 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:27:31.310 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:27:31.431 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:27:32.987 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:27:33.884 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:27:33.912 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:27:33.961 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:27:34.106 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+16:27:34.108 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+16:27:34.134 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:27:34.156 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 6.296 seconds (JVM running for 7.748)
+16:27:49.441 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:27:49.664 [http-nio-8080-exec-2] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:27:49.666 [http-nio-8080-exec-2] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+16:27:51.741 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+16:28:08.106 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,219] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+16:28:08.216 [lettuce-eventExecutorLoop-1-3] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+16:28:14.514 [lettuce-eventExecutorLoop-1-6] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost:6379
+16:28:17.119 [lettuce-nioEventLoop-4-6] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,177] - Reconnected to localhost:6379
+16:38:46.491 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 49592 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+16:38:46.494 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+16:38:48.717 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:38:48.723 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:38:48.724 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:38:48.846 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:38:50.352 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:38:51.358 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:38:51.415 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:38:51.488 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:38:53.324 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+16:38:53.328 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+16:38:53.346 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:38:53.382 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 7.373 seconds (JVM running for 8.808)
+16:43:11.535 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:43:12.714 [http-nio-8080-exec-2] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+16:43:13.140 [http-nio-8080-exec-2] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:43:13.142 [http-nio-8080-exec-2] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+16:46:04.512 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 44908 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+16:46:04.514 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+16:46:05.882 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:46:05.888 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:46:05.889 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:46:06.005 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:46:07.043 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:46:07.622 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:46:07.636 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:46:07.665 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:46:07.770 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_1
+16:46:07.771 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: selectAllUsingGET_2
+16:46:07.783 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:46:07.803 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 3.601 seconds (JVM running for 4.626)
+16:46:21.658 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:46:22.575 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+16:46:22.746 [http-nio-8080-exec-1] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:46:22.748 [http-nio-8080-exec-1] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+16:58:38.424 [http-nio-8080-exec-12] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\timg-20200218045837.jpg
+16:59:59.564 [http-nio-8080-exec-30] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\1533308847-sJINRfclxg-20200218045958.jpeg
+17:00:32.034 [http-nio-8080-exec-17] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\timg-20200218050031.jpg
+17:29:16.777 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,219] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+17:29:16.885 [lettuce-eventExecutorLoop-1-4] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+17:29:23.185 [lettuce-eventExecutorLoop-1-7] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost:6379
+17:29:29.484 [lettuce-eventExecutorLoop-1-10] INFO  i.l.c.p.ConnectionWatchdog - [log,173] - Reconnecting, last destination was localhost:6379

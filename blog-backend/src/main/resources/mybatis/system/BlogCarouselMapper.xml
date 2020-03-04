@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.system.mapper.BlogCarouselMapper">
+    <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.system.domain.BlogCarousel">
+        <!--@mbg.generated-->
+        <!--@Table blog_carousel-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="img_url" jdbcType="VARCHAR" property="imgUrl"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="url" jdbcType="VARCHAR" property="url"/>
+        <result column="display" jdbcType="CHAR" property="display"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, img_url, title, url, display, creator, create_time, update_time
+    </sql>
+
+    <sql id="selectCarouselVo">
+        SELECT id,img_url,title,url,
+  CASE display
+      WHEN '1' THEN '展示'
+      WHEN '2' THEN '不展示'
+      END AS display,
+  creator,create_time,update_time FROM blog_carousel
+    </sql>
+
+  <select id="selectBlogCarouselById" resultType="com.pzhu.myblog.project.system.domain.BlogCarousel">
+    <include refid="selectCarouselVo"/>
+    where id = #{id}
+  </select>
+
+  <select id="selectBlogCarouselList" resultType="com.pzhu.myblog.project.system.domain.BlogCarousel">
+    <include refid="selectCarouselVo"/>
+  </select>
+
+  <insert id="insertBlogCarousel" >
+    insert into blog_carousel (
+    <if test="title != null and title != '' ">title, </if>
+    <if test="imgUrl != null and imgUrl != '' ">img_url, </if>
+    <if test="url != null and url != '' ">url, </if>
+    <if test="display != null and display != '' ">display, </if>
+    <if test="creator != null and creator != ''">creator,</if>
+    create_time
+    )values(
+    <if test="title != null and title != ''">#{title}, </if>
+    <if test="imgUrl != null and imgUrl != ''">#{imgUrl}, </if>
+    <if test="url != null and url != ''">#{url}, </if>
+    <if test="display != null and display != ''">#{display}, </if>
+    <if test="creator != null and creator != ''">#{creator},</if>
+    sysdate()
+    )
+  </insert>
+
+  <update id="updateBlogCarousel" >
+    update blog_carousel
+    <set>
+      <if test="title != null and title != ''">title = #{title}, </if>
+      <if test="imgUrl != null and imgUrl != ''">img_url = #{imgUrl}, </if>
+      <if test="url != null and url != ''">url = #{url}, </if>
+      <if test="display != null and display != ''">display = #{display}, </if>
+      <if test="creator != null and creator != ''">creator = #{creator},</if>
+      update_time = sysdate()
+    </set>
+    where id = #{id}
+  </update>
+
+  <delete id="deleteBlogCarouselById">
+    delete from blog_carousel where id = #{id}
+  </delete>
+
+  <delete id="deleteBlogCarouselByIds" >
+    delete from blog_carousel where id in
+    <foreach item="Ids" collection="list" open="(" separator="," close=")">
+      #{Ids}
+    </foreach>
+  </delete>
+
+</mapper>

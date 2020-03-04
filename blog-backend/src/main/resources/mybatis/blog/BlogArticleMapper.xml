@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.blog.mapper.BlogArticleMapper">
+  <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.blog.domain.BlogArticle">
+    <!--@mbg.generated-->
+    <!--@Table blog_article-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="category_id" jdbcType="INTEGER" property="categoryId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="summary" jdbcType="VARCHAR" property="summary" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="author_img" jdbcType="VARCHAR" property="authorImg" />
+    <result column="summary_img" jdbcType="VARCHAR" property="summaryImg" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="support" jdbcType="CHAR" property="support" />
+    <result column="click_num" jdbcType="INTEGER" property="clickNum" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, category_id, title, summary, content, author, author_img, summary_img, `status`,
+    support, click_num, create_time, update_time
+  </sql>
+
+  <sql id="Article_List">
+    <!--@mbg.generated-->
+    id, title, author, `status`,
+    support, click_num, create_time, update_time
+  </sql>
+
+  <select id="selectByAll" resultMap="BaseResultMap">
+    SELECT <include refid="Article_List" />
+    FROM blog_article
+  </select>
+
+  <select id="select" resultMap="BaseResultMap">
+    SELECT <include refid="Article_List" />
+    FROM blog_article AS b
+    <where>
+      <if test="title !=null and title !=''">
+        and LOCATE(#{title}, `title`)>0
+      </if>
+    <if test="categoryId !=null and categoryId !=''">
+      and b.category_id =#{categoryId}
+    </if>
+    <if test="status !=null and status !=''">
+      and b.status =#{status}
+    </if>
+    </where>
+  </select>
+
+  <select id="selectByCategoryId" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/>
+    FROM blog_article
+    WHERE category_id = #{categoryId}
+  </select>
+    <select id="selectPageVo" resultType="com.pzhu.myblog.project.blog.vo.BlogArticleVO">
+      SELECT id,title,author,
+      CASE status
+      WHEN '1' THEN '已发布'
+      WHEN '2' THEN '草稿箱'
+      ELSE '垃圾箱'
+      END AS status,
+      click_num AS clickNum,create_time AS createTime FROM blog_article
+    </select>
+
+
+
+</mapper>

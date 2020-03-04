@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.frontend.mapper.FrontendMapper">
+
+
+    <select id="articlePage" resultType="com.pzhu.myblog.project.frontend.domain.Article">
+        SELECT
+  id,
+  title,
+  (SELECT
+    category_title
+  FROM
+    blog_category
+  WHERE id = category_id) AS category,
+  summary,
+  summary_img,
+  author,
+  (SELECT
+    avatar
+  FROM
+    blog_user
+  WHERE user_name = author) AS author_img,
+  click_num,
+  create_time
+FROM
+  blog_article ORDER BY id DESC
+    </select>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.blog.mapper.BlogCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.blog.domain.BlogCategory">
+    <!--@mbg.generated-->
+    <!--@Table blog_category-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="category_title" jdbcType="VARCHAR" property="categoryTitle" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, category_title, description, creator, create_time, update_time
+  </sql>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List" />
+    FROM blog_category
+  </select>
+
+    <select id="selectByName" resultMap="BaseResultMap">
+      SELECT <include refid="Base_Column_List" />
+      FROM blog_category WHERE category_title = #{name}
+    </select>
+    <select id="selectPageVo" resultType="com.pzhu.myblog.project.blog.domain.BlogCategory">
+      SELECT <include refid="Base_Column_List">
+    </include>
+      FROM blog_category
+    </select>
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.blog.mapper.BlogTagMapper">
+    <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.blog.domain.BlogTag">
+        <!--@mbg.generated-->
+        <!--@Table blog_tag-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="tag_title" jdbcType="VARCHAR" property="tagTitle"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, tag_title, creator, create_time, update_time
+    </sql>
+    <select id="selectAll" resultType="com.pzhu.myblog.project.blog.domain.BlogTag">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM blog_tag
+    </select>
+
+    <select id="selectByName" resultType="java.lang.Integer" parameterType="java.util.List">
+        SELECT id FROM blog_tag WHERE
+        tag_title IN
+        <foreach collection="list" index="index" item="item"
+                 open="(" separator="," close=")">#{item}
+        </foreach>
+    </select>
+    <select id="selectContactCount" resultType="java.lang.Integer">
+    SELECT COUNT(title) FROM
+  blog_article
+  LEFT JOIN blog_article_tag
+    ON blog_article.`id` = blog_article_tag.`article_id`
+WHERE blog_article_tag.`tag_id` = #{id}
+    </select>
+
+  <select id="selectContactTitle" resultType="java.lang.String">
+    SELECT title FROM
+    blog_article
+    LEFT JOIN blog_article_tag
+    ON blog_article.`id` = blog_article_tag.`article_id`
+    WHERE blog_article_tag.`tag_id` = #{id}
+  </select>
+  <select id="selectPageVo" resultType="com.pzhu.myblog.project.blog.vo.TagDetail">
+   SELECT <include refid="Base_Column_List"></include> ,(SELECT COUNT(title) FROM
+    blog_article
+    LEFT JOIN blog_article_tag
+    ON blog_article.`id` = blog_article_tag.`article_id`
+    WHERE blog_article_tag.`tag_id` = blog_tag.`id`) AS count FROM blog_tag
+  </select>
+</mapper>

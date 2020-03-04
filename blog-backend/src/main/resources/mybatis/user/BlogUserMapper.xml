@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.user.mapper.BlogUserMapper">
+  <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.user.domain.BlogUser">
+    <!--@mbg.generated-->
+    <!--@Table blog_user-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="user_type" jdbcType="VARCHAR" property="userType" />
+    <result column="about" jdbcType="LONGVARCHAR" property="about" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_name, account, email, phone, avatar, `password`, user_type, about, create_time,
+    update_time
+  </sql>
+  <select id="selectByAccount" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/>
+    FROM blog_user
+    WHERE account = #{account}
+  </select>
+
+  <select id="selectPageVo" resultType="com.pzhu.myblog.project.user.domain.BlogUser">
+    SELECT id, user_name, account, email, phone, avatar, `password`,
+     CASE user_type
+      WHEN '1' THEN '管理员'
+      WHEN '2' THEN '普通用户'
+      ELSE '未定义'
+      END AS user_type,
+     about, create_time,
+    update_time
+    FROM blog_user
+  </select>
+
+  <insert id="addUser">
+    insert into blog_user (
+    <if test="userName != null and userName != ''">user_name, </if>
+    <if test="avatar != null and avatar != '' ">avatar, </if>
+    <if test="email != null and email != '' ">email, </if>
+    <if test="phone != null and phone != '' ">phone, </if>
+    <if test="about != null and about != ''">about,</if>
+    <if test="account != null and account != ''">account,</if>
+    <if test="password != null and password != ''">password,</if>
+    create_time
+    )values(
+    <if test="userName != null and userName != ''">#{userName}, </if>
+    <if test="avatar != null and avatar != ''">#{avatar}, </if>
+    <if test="email != null and email != ''">#{email}, </if>
+    <if test="phone != null and phone != ''">#{phone}, </if>
+    <if test="about != null and about != ''">#{about},</if>
+    <if test="account != null and account != ''">#{account},</if>
+    <if test="password != null and password != ''">#{password},</if>
+    sysdate()
+    )
+  </insert>
+  <insert id="addRole">
+    insert blog_user_role (user_id,role_id) values (#{userId},'1')
+  </insert>
+
+  <update id="updateUser">
+    update blog_user
+    <set>
+      <if test="userName != null and userName != ''">user_name = #{userName}, </if>
+      <if test="avatar != null and avatar != ''">avatar = #{avatar}, </if>
+      <if test="email != null and email != ''">email = #{email}, </if>
+      <if test="phone != null and phone != ''">phone = #{phone}, </if>
+      <if test="about != null and about != ''">about = #{about},</if>
+      <if test="account != null and account != ''">account = #{account},</if>
+      <if test="password != null and password != ''">password = #{password},</if>
+      update_time = sysdate()
+    </set>
+    where id = #{id}
+  </update>
+
+  <delete id="deleteUser">
+    delete from blog_user where id = #{id}
+  </delete>
+</mapper>

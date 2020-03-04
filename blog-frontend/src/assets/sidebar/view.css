@@ -1,0 +1,59 @@
+@charset "gb2312";
+/* 幻灯片 */
+
+#myFocus { width: 300px; height: 200px; }
+.banner { width : 300px; overflow : hidden; }
+/*
+.covers, #slide-holder { height : 200px; width : 300px; overflow : hidden; }
+#slide-runner { height : 200px; width : 300px; overflow : hidden; position : absolute; }
+#slide-holder img { position : absolute; }
+#slide-controls { left : 0; bottom : 0px; width : 300px; height : 34px; display : none; position : absolute; background : url(../images/slide-bg.png) 0 0; }
+#slide-controls p.text { float : left; color : #fff; display : inline; line-height : 16px; margin : 10px 0 0 20px; }
+#slide-controls p#slide-nav { float : right; height : 24px; display : inline; margin : 5px 0px 0 0; }
+#slide-controls p#slide-nav a { float : left; width : 24px; height : 24px; display : inline; font-size : 11px; margin : 0 5px 0 0; line-height : 24px; text-align : center; color: #fff }
+#slide-controls p#slide-nav a.on { background-position : 0 -24px; }
+#slide-controls p#slide-nav a { background-image : url(../images/silde-nav.png); }
+
+/*左文章列表*/
+.topnews { margin: 0 0 20px 0; width: 670px; overflow: hidden }
+.topnews h2 { font-size: 14px; line-height: 36px; color: #666; background: url(../images/lct.png) left center no-repeat; padding-left: 30px }
+.topnews h2 a { color: #333; margin: 0 5px }
+.topnews h2 a:hover { color: #000; text-decoration: underline }
+.news_title { font-size: 24px; font-weight: 400; padding: 20px 0 10px 0; color: #38485A; }
+.news_author { width: 100%; color: #999999;  line-height: 18px; position:relative }
+.news_author span { margin-right: 20px; padding-left: 20px }
+.au01 { background: url(../images/author2.png) no-repeat left center }
+.au02 { background: url(../images/date.png) no-repeat left center }
+.au03 b { color: #333; padding: 0 5px }
+.au04{ background: #38475a; color: #FFF; font-weight: normal; padding: 3px 8px; position: absolute; right: 21px; top: 0; border-radius:3px  }
+.au04:after{content: "";  position: absolute; left:26px; top: 20px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 10px solid #38475a; }/*三角形*/
+.news_about { color: #888888; border: 1px solid #F3F3F3; padding: 10px; margin: 20px auto 15px auto; line-height: 23px; background: none repeat 0 0 #F6F6F6; }
+.news_about strong { color: #38485A; font-weight: 400 !important; font-size: 13px; padding-right: 8px; }
+.news_content { line-height: 24px ;font-size: 14px;}
+.news_content p { overflow: hidden; padding-bottom: 4px; padding-top: 6px; word-wrap: break-word; }
+.tags a {background: #F4650E;padding: 3px 8px;margin: 0 5px 0 0;color: #fff;}
+.tags {margin: 10px 0;}
+.fenx { margin: 20px 0 }/*分享*/
+.nextinfo { line-height: 24px; }/*上一篇下一篇*/
+.nextinfo a:hover { color: #000; text-decoration: underline }
+/*相关文章*/
+.otherlink { width: 100%; overflow: hidden; clear: both }
+.otherlink h2 { border-bottom: #099 2px solid; line-height: 40px; font-size: 14px; background: url(../images/5794.png) left center no-repeat; padding-left: 30px; color: #000 }
+.otherlink ul { margin: 10px 0 }
+.otherlink li { line-height: 24px; height: 24px; display: block; width: 290px; float: left; overflow: hidden; margin-right: 30px; }
+.otherlink li a:hover { text-decoration: underline; color: #09C }
+/*文章评论*/
+.news_pl { margin: 10px 0; }
+.news_pl h2 { background: url(../images/newsbg03.png) no-repeat left center; border-bottom: #099 2px solid; line-height: 40px; font-size: 14px; padding-left: 20px; color: #000 }
+/*首页右侧广告 300*/
+.ad { width: 300px; overflow: hidden; margin: 30px 0 }
+.ad img { width: 300px; }
+/*友情链接*/
+.links { width: 100%; overflow: hidden; clear: both }
+.links h3 { line-height: 40px; color: #38485A; font-size: 18px; border-bottom: 1px solid #E6E6E6; height: 40px; margin-bottom: 20px }
+.links h3 span { float: right; font-size: 12px; }
+.links h3 span a { color: #999; padding: 0 5px }
+.links h3 span a:hover { color: #409EFF; text-decoration: underline }
+.links ul { background: #f9f9f9; padding: 10px; overflow: hidden; border: #e9e9e9 1px solid }
+.links ul li { float: left; padding: 5px 8px }
+.links ul li a:hover { color: #409EFF }

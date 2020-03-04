@@ -1,0 +1,36 @@
+17:45:32.780 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 58476 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+17:45:32.797 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+17:45:38.421 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+17:45:38.430 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:45:38.431 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:45:38.582 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:45:41.390 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:45:42.406 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:45:42.422 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:45:42.490 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:45:42.646 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+17:45:42.670 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 10.688 seconds (JVM running for 12.476)
+17:51:52.653 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:51:55.467 [http-nio-8080-exec-5] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:51:55.468 [http-nio-8080-exec-5] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+17:53:05.243 [http-nio-8080-exec-7] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+17:53:06.488 [schedule-pool-1] INFO  sys-user - [run,57] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:56:30.884 [http-nio-8080-exec-26] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\timg-20200226055629.jpg
+17:58:50.888 [http-nio-8080-exec-10] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\timg-20200226055848.jpg
+18:00:57.657 [main] INFO  c.p.m.MyBlogApplication - [logStarting,50] - Starting MyBlogApplication on DESKTOP-MR6GB2V with PID 59884 (E:\IDEA\MyBlog\target\classes started by Admin in E:\IDEA\MyBlog)
+18:00:57.660 [main] INFO  c.p.m.MyBlogApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+18:01:00.596 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+18:01:00.602 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:01:00.603 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:01:00.728 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:01:02.838 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+18:01:03.604 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+18:01:03.620 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+18:01:03.660 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+18:01:03.784 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+18:01:03.807 [main] INFO  c.p.m.MyBlogApplication - [logStarted,59] - Started MyBlogApplication in 6.554 seconds (JVM running for 8.052)
+18:01:14.924 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:01:15.924 [http-nio-8080-exec-1] INFO  c.a.d.p.DruidDataSource - [init,1003] - {dataSource-1} inited
+18:01:30.133 [http-nio-8080-exec-2] INFO  c.p.m.f.u.QiNiuUtils - [uploadFile,76] - 上传文件到七牛云服务器成功http://image.guohuaijian.com\timg-20200226060128.jpg
+18:01:35.222 [http-nio-8080-exec-3] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+18:01:35.224 [http-nio-8080-exec-3] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library

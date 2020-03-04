@@ -1,0 +1,81 @@
+@charset "gb2312";
+/* 共用css */
+* { margin: 0; padding: 0 }
+body { font: 12px/1.5 'Microsoft Yahei', 'Simsun'; color: #666666; background: #fff }
+img { border: 0; display: block }
+ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a { outline: none; }
+a:link, a:visited { text-decoration: none; color: #666 }
+.clear { clear: both; }
+.blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
+.f_l { float: left }
+.f_r { float: right }
+.l_box { width: 670px; }
+.r_box { width: 300px; }
+/* 头部信息 */
+header { }
+.topbg { background: #f3f3f3; height: 30px; line-height: 30px; width: 100%; }
+.topbgline { height: 1px; width: 100%; margin-top: 1px; background: #e3e2e2 }
+.topnav { width: 1000px; margin: auto; text-align: right; }
+.topnav a { margin-left: 20px }
+.topnav a:hover { color: #000 }
+.logo { width: 1000px; margin: 30px auto; overflow: hidden; clear: both }
+#topnav { width: 100%; background: #31A9B3; height: 50px; line-height: 46px; }
+#topnav ul { width: 1000px; margin: auto }
+#topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
+#topnav a:hover { background: #fff; color: #000; border-top: 4px solid #f77825; }
+#topnav a { color: #FFF }
+#topnav_current { background: #fff; border-top: 4px solid #f77825; color: #000 }/* 高亮选中颜色 */
+a#topnav_current { color: #000 }
+article { width: 1000px; margin: 20px auto; }
+/*footer*/
+footer { background: #f6f6f6; border-top: 1px solid #eee; width: 100%; clear: both }
+.endfoot { margin: 30px auto 0; width: 1000px; overflow: hidden; padding-bottom: 20px }
+.ft-info { margin-top: 24px }
+.ft-title { margin-top: 20px; overflow: hidden }
+.ft-title p { font-size: 12px; color: #BBBBBB; display: block; height: 20px; line-height: 20px; }
+.ftlogo { margin-bottom: 20px }
+.ft-nav { display: block; height: 27px; line-height: 27px; margin-top: 5px; text-align: right; margin-right: 100px }
+.ft-copyright { color: #CECECE; line-height: 21px; margin-right: 100px }
+.ft-shares .shares-ucloud { width: 80px; margin: 0 5px 0 22px; background-position: 0 -137px; }
+.ft-shares .shares-ucloud:hover { background-position: -100px -137px }
+.ft-shares .shares-sina { background-position: 0 -102px; }
+.ft-shares .shares-sina:hover { background-position: -50px -102px }
+.ft-shares .shares-ten { background-position: 0 -68px; }
+.ft-shares .shares-ten:hover { background-position: -50px -68px }
+.ft-shares .shares-weixin { background-position: 0 -34px; }
+.ft-shares .shares-weixin:hover { background-position: -50px -34px }
+.ft-shares .shares-dib { background-position: 0 0; }
+.ft-shares .shares-dib:hover { background-position: -50px 0 }
+.ft-shares .shares-dib { background-position: 0 0 }
+.ft-shares .shares-dib:hover { background-position: -50px 0 }
+/*标签云*/
+.cloud { width: 100%; clear: both; overflow: hidden }
+.cloud h3 { line-height: 40px; color: #38485A; font-size: 18px; border-bottom: 1px solid #E6E6E6; height: 40px; }
+.cloud ul { margin: 20px 0 }
+.cloud ul a { line-height: 24px; height: 24px; display: block; background: #999; float: left; padding: 3px 11px; margin: 10px 10px 0 0; border-radius: 8px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; color: #FFF }
+.cloud ul a:nth-child(8n-7) { background: #8A9B0F }
+.cloud ul a:nth-child(8n-6) { background: #EB6841 }
+.cloud ul a:nth-child(8n-5) { background: #3FB8AF }
+.cloud ul a:nth-child(8n-4) { background: #FE4365 }
+.cloud ul a:nth-child(8n-3) { background: #FC9D9A }
+.cloud ul a:nth-child(8n-2) { background: #EDC951 }
+.cloud ul a:nth-child(8n-1) { background: #C8C8A9 }
+.cloud ul a:nth-child(8n) { background: #83AF9B }
+.cloud ul a:first-child { background: #036564 }
+.cloud ul a:last-child { background: #3299BB }
+.cloud ul a:hover { border-radius: 0; text-shadow: #000 1px 1px 1px }
+/* 切换卡 */
+.moreSelect { width: 100%; margin: 30px 0 20px 0; overflow: hidden }
+.ms-top { height: 32px; border-bottom: solid 1px #EAEAEA; font-size: 14px }
+#tab li a { float: left; height: 32px; cursor: pointer; line-height: 32px; list-style-type: none; padding: 0 15px; }
+#tab li.cur a { color: #fff; background: #f77825; }
+.bd { display: none }
+.bd-news ul { padding: 10px 0 0 10px; background: url(../images/ph2.png) no-repeat 10px 29px; }
+.bd-news ul li { border-bottom: solid 1px #EAEAEA; line-height: 30px; height: 30px; overflow: hidden; font-size: 14px; padding: 10px 0 0 30px; }
+.bd-news ul li a { display: block; }
+.bd-news ul li a:hover { color: #000; }
+.bd-news ul li:hover { border-bottom: #000 1px solid; }/* 鼠标放上去的效果 */
+/*微信top*/
+.tip { padding: 20px 10px; color: #fff; background: #31A9B3; line-height: 24px; text-align:center; font-size:14px }

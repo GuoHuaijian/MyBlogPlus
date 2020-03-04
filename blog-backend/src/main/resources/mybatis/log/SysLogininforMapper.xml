@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.myblog.project.log.mapper.SysLogininforMapper">
+  <resultMap id="BaseResultMap" type="com.pzhu.myblog.project.log.domain.SysLogininfor">
+    <!--@mbg.generated-->
+    <!--@Table sys_logininfor-->
+    <id column="info_id" jdbcType="BIGINT" property="infoId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="ipaddr" jdbcType="VARCHAR" property="ipaddr" />
+    <result column="login_location" jdbcType="VARCHAR" property="loginLocation" />
+    <result column="browser" jdbcType="VARCHAR" property="browser" />
+    <result column="os" jdbcType="VARCHAR" property="os" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="msg" jdbcType="VARCHAR" property="msg" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    info_id, user_name, ipaddr, login_location, browser, os, `status`, msg, login_time
+  </sql>
+
+	<resultMap id="SysLogininforResult" type="SysLogininfor">
+		<id column="info_id" property="infoId" />
+		<result column="user_name" property="userName" />
+		<result column="status" property="status" />
+		<result column="ipaddr" property="ipaddr" />
+		<result column="login_location" property="loginLocation" />
+		<result column="browser" property="browser" />
+		<result column="os" property="os" />
+		<result column="msg" property="msg" />
+		<result column="login_time" property="loginTime" />
+	</resultMap>
+
+	<insert id="insertLogininfor" parameterType="SysLogininfor">
+		insert into sys_logininfor (user_name, status, ipaddr, login_location, browser, os, msg, login_time)
+		values (#{userName}, #{status}, #{ipaddr}, #{loginLocation}, #{browser}, #{os}, #{msg}, sysdate())
+	</insert>
+
+
+
+	<delete id="deleteLogininforByIds" parameterType="Long">
+ 		delete from sys_logininfor where info_id in
+ 		<foreach close=")" collection="array" item="infoId" open="(" separator=",">
+ 			#{infoId}
+        </foreach>
+ 	</delete>
+
+    <update id="cleanLogininfor">
+        truncate table sys_logininfor
+    </update>
+	<select id="selectLogininforList" resultMap="BaseResultMap">
+		select info_id, user_name, ipaddr, login_location, browser, os, status, msg, login_time from sys_logininfor
+		<where>
+			<if test="ipaddr != null and ipaddr != ''">
+				AND ipaddr like concat('%', #{ipaddr}, '%')
+			</if>
+			<if test="status != null and status != ''">
+				AND status = #{status}
+			</if>
+			<if test="userName != null and userName != ''">
+				AND user_name like concat('%', #{userName}, '%')
+			</if>
+			<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+				and date_format(login_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+			</if>
+			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+				and date_format(login_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+			</if>
+		</where>
+	</select>
+
+	<select id="selectList" resultType="com.pzhu.myblog.project.log.domain.SysLogininfor">
+		SELECT info_id, user_name, ipaddr, login_location, browser, os, status, msg, login_time FROM sys_logininfor
+	</select>
+
+</mapper>
