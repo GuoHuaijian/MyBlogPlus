@@ -32,7 +32,7 @@
 
   <select id="selectByAll" resultMap="BaseResultMap">
     SELECT <include refid="Article_List" />
-    FROM blog_article
+    FROM blog_article ORDER BY create_time DESC
   </select>
 
   <select id="select" resultMap="BaseResultMap">
@@ -48,7 +48,7 @@
     <if test="status !=null and status !=''">
       and b.status =#{status}
     </if>
-    </where>
+    </where> ORDER BY create_time DESC
   </select>
 
   <select id="selectByCategoryId" resultMap="BaseResultMap">
@@ -63,7 +63,7 @@
       WHEN '2' THEN '草稿箱'
       ELSE '垃圾箱'
       END AS status,
-      click_num AS clickNum,create_time AS createTime FROM blog_article
+      click_num AS clickNum,create_time AS createTime FROM blog_article ORDER BY create_time DESC
     </select>
 
 

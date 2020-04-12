@@ -3,12 +3,14 @@ package com.pzhu.myblog.project.frontend.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pzhu.myblog.common.constant.HttpStatus;
 import com.pzhu.myblog.common.dto.BaseResult;
+import com.pzhu.myblog.framework.aspectj.lang.annotation.VLog;
 import com.pzhu.myblog.project.blog.domain.BlogCategory;
 import com.pzhu.myblog.project.blog.domain.BlogTag;
 import com.pzhu.myblog.project.blog.service.BlogArticleService;
 import com.pzhu.myblog.project.blog.service.BlogCategoryService;
 import com.pzhu.myblog.project.blog.service.BlogTagService;
 import com.pzhu.myblog.project.blog.vo.ArticleDetail;
+import com.pzhu.myblog.project.frontend.domain.Archive;
 import com.pzhu.myblog.project.frontend.domain.Article;
 import com.pzhu.myblog.project.frontend.service.FrontendService;
 import com.pzhu.myblog.project.system.domain.BlogCarousel;
@@ -50,6 +52,7 @@ public class FrontendController {
      * 获取轮播图
      * @return
      */
+    @VLog(title = "首页")
     @GetMapping("carousel")
     public BaseResult carousel(){
         List<BlogCarousel> blogCarousels = frontendService.carouselList();
@@ -108,5 +111,27 @@ public class FrontendController {
     public BaseResult getArticleDetail(@PathVariable int id){
         ArticleDetail articleDetail = articleService.selectById(id);
         return BaseResult.success(HttpStatus.SUCCESS,articleDetail,"请求成功");
+    }
+
+    /**
+     * 查询归档信息
+     * @return
+     */
+    @VLog(title = "归档")
+    @GetMapping(value = "archive")
+    public BaseResult archiveList(){
+        List<Archive> archives = frontendService.archiveList();
+        return BaseResult.success(HttpStatus.SUCCESS,archives,"请求成功");
+    }
+
+    /**
+     * 查询自我简介
+     * @return
+     */
+    @VLog(title = "自我简介")
+    @GetMapping(value = "about")
+    public BaseResult aboutMe(){
+        String aboutMe = frontendService.aboutMe();
+        return BaseResult.success(HttpStatus.SUCCESS,aboutMe,"请求成功");
     }
 }

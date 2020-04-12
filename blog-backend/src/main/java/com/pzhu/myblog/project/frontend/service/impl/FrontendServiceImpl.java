@@ -1,6 +1,7 @@
 package com.pzhu.myblog.project.frontend.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.pzhu.myblog.project.frontend.domain.Archive;
 import com.pzhu.myblog.project.frontend.domain.Article;
 import com.pzhu.myblog.project.frontend.mapper.FrontendMapper;
 import com.pzhu.myblog.project.frontend.service.FrontendService;
@@ -41,5 +42,23 @@ public class FrontendServiceImpl implements FrontendService {
     @Override
     public Page<Article> articlePage(Page<?> page) {
         return frontendMapper.articlePage(page);
+    }
+
+    /**
+     * 查询归档信息
+     * @return
+     */
+    @Override
+    public List<Archive> archiveList() {
+        return frontendMapper.archiveList();
+    }
+
+    /**
+     * 查询自我简介
+     * @return
+     */
+    @Override
+    public String aboutMe() {
+        return frontendMapper.aboutMe();
     }
 }

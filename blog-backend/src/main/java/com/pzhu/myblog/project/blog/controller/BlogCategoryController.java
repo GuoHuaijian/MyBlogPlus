@@ -3,7 +3,6 @@ package com.pzhu.myblog.project.blog.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pzhu.myblog.common.constant.CodeStatus;
 import com.pzhu.myblog.common.dto.BaseResult;
-import com.pzhu.myblog.framework.aspectj.lang.annotation.VLog;
 import com.pzhu.myblog.project.blog.domain.BlogCategory;
 import com.pzhu.myblog.project.blog.service.BlogCategoryService;
 import com.pzhu.myblog.project.blog.vo.BlogCategoryVO;
@@ -49,7 +48,6 @@ public class BlogCategoryController {
      * @param pageSize 每页大小 默认为10
      * @return
      */
-    @VLog(title = "首页")
     @GetMapping(value = "page/{currentPage}/{pageSize}")
     public BaseResult selectPageVo(@PathVariable int currentPage, @PathVariable int pageSize){
         Page<BlogCategory> page = new Page<>(currentPage,pageSize);

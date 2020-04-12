@@ -25,4 +25,20 @@
 FROM
   blog_article ORDER BY id DESC
     </select>
+
+
+  <select id="archiveList" resultType="com.pzhu.myblog.project.frontend.domain.Archive">
+    SELECT  DISTINCT
+  YEAR(post.create_time) AS `year`,
+  MONTH(post.create_time) AS `month`,
+  (SELECT GROUP_CONCAT(title) FROM  blog_article WHERE  MONTH(blog_article.create_time) =  MONTH(post.create_time) )
+  AS title
+
+FROM
+  blog_article AS post
+  </select>
+
+  <select id="aboutMe" resultType="java.lang.String">
+    SELECT about FROM blog_user where user_type = 3
+  </select>
 </mapper>

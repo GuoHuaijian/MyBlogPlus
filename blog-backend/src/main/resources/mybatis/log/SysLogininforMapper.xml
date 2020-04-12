@@ -66,11 +66,11 @@
 			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
 				and date_format(login_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
 			</if>
-		</where>
+		</where> ORDER BY info_id DESC
 	</select>
 
 	<select id="selectList" resultType="com.pzhu.myblog.project.log.domain.SysLogininfor">
-		SELECT info_id, user_name, ipaddr, login_location, browser, os, status, msg, login_time FROM sys_logininfor
+		SELECT info_id, user_name, ipaddr, login_location, browser, os, status, msg, login_time FROM sys_logininfor ORDER BY info_id DESC
 	</select>
 
 </mapper>

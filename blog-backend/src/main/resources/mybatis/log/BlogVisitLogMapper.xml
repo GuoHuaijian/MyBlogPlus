@@ -25,7 +25,7 @@
         select visit_id, ip_addr, location, browser, os, request_url,status,spider, title, create_by,
         create_time,entry_url
         from
-        blog_visit_log
+        blog_visit_log ORDER BY visit_id DESC
     </sql>
 
   <insert id="insertBlogVisitLog" parameterType="com.pzhu.myblog.project.log.domain.BlogVisitLog">
@@ -81,7 +81,7 @@
       <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
         and date_format(oper_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
       </if>
-    </where>
+    </where> ORDER BY visit_id DESC
   </select>
   <select id="selectBlogVisitLogById" resultType="com.pzhu.myblog.project.log.domain.BlogVisitLog">
     select visit_id, ip_addr, location, browser, os, spider, request_url, error_msg, title, create_by, create_time, status,entry_url

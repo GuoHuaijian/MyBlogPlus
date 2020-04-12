@@ -88,6 +88,7 @@ public class BlogArticleController {
      */
     @ApiOperation(value = "根据分类id删除文章", notes = "参数必填", httpMethod = "DELETE")
     @ApiImplicitParam(name = "id", value = "分类id", required = true, dataType = "int")
+    @Log(title = "删除文章",businessType =BusinessType.DELETE )
     @DeleteMapping(value = "delete/{id}")
     public BaseResult deleteById(@PathVariable int id){
         int i = blogArticleService.deleteById(id);
@@ -107,6 +108,7 @@ public class BlogArticleController {
      */
     @ApiOperation(value = "添加文章", notes = "参数必填", httpMethod = "POST")
     @ApiImplicitParam(name = "BlogArticle", value = "文章", required = true, dataType = "BlogArticle")
+    @Log(title = "添加文章",businessType =BusinessType.INSERT )
     @GetMapping(value = "insert")
     public BaseResult insert(@RequestBody BlogArticle blogArticle){
         int i = blogArticleService.insert(blogArticle);
@@ -118,6 +120,7 @@ public class BlogArticleController {
      * @param blogArticle
      * @return
      */
+    @Log(title = "修改文章",businessType =BusinessType.UPDATE )
     @PostMapping(value = "update")
     public BaseResult update(@RequestBody BlogArticle blogArticle){
         int i = blogArticleService.update(blogArticle);
@@ -148,6 +151,7 @@ public class BlogArticleController {
      * @param blogArticleDTO {@link BlogArticleDTO}
      * @return
      */
+    @Log(title = "添加文章",businessType =BusinessType.INSERT )
     @PostMapping("add")
     public BaseResult addArticle(@RequestBody BlogArticleDTO blogArticleDTO) {
         int i = blogArticleService.addArticle(blogArticleDTO);
@@ -163,6 +167,7 @@ public class BlogArticleController {
      * @param id
      * @return
      */
+    @Log(title = "查询文章全部信息",businessType =BusinessType.OTHER )
     @GetMapping("detail/{id}")
     public BaseResult selectById(@PathVariable int id){
         ArticleDetail articleDetail = blogArticleService.selectById(id);
@@ -174,6 +179,7 @@ public class BlogArticleController {
      * @param id
      * @return
      */
+    @Log(title = "查询文章",businessType =BusinessType.OTHER )
     @GetMapping("detail2/{id}")
     public BaseResult selectByUpdateId(@PathVariable int id){
         BlogArticleDTO articleDTO = new BlogArticleDTO();
@@ -195,6 +201,7 @@ public class BlogArticleController {
      * @param id
      * @return
      */
+    @Log(title = "修改文章",businessType =BusinessType.UPDATE )
     @PutMapping("update/{id}")
     public BaseResult update(@RequestBody BlogArticleDTO blogArticleDTO,@PathVariable int id){
         int i = blogArticleService.update(blogArticleDTO, id);

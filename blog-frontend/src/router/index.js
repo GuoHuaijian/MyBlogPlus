@@ -1,23 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import hello from "../components/hello";
-import topnav from "../components/topnav";
-import carousel from "../components/carousel";
-import articlelist from "../components/articlelist";
-import sidebar from "../components/sidebar";
-import article from "../components/article";
-import blank from "../components/blank";
-import indextext from "../views/indextext";
-import main from '../views/main'
+import topnav from "../components/topnav/index";
+import carousel from "../views/carousel/index";
+import articlelist from "../views/article/list/index";
+import sidebar from "../components/sidebar/index";
+import article from "../views/article/index";
+import about from "../views/about/index";
+import framework from "../views/framework/index";
+import main from '../views/main/index'
+import archive from '../views/archive/index'
+import messageBoard from '../views/messageBoard/index'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/hello',
-        name: 'hello',
-        component: hello
-    }, {
+        path: '/',
+        redirect:'main'
+    },
+    {
         path: '/topnav',
         name: 'topnav',
         component: topnav
@@ -34,9 +35,9 @@ const routes = [
         name: 'main',
         component: main
     },{
-        path: '/indextext',
-        name: 'indextext',
-        component: indextext,
+        path: '/framework',
+        name: 'framework',
+        component: framework,
         children:[{
             path: '/article',
             name: 'article',
@@ -46,10 +47,18 @@ const routes = [
             name: 'articlelist',
             component: articlelist
         },{
-            path: '/blank',
-            name: 'blank',
-            component: blank
-        }
+            path: '/about',
+            name: 'about',
+            component: about
+        },{
+                path: '/archive',
+                name: 'archive',
+                component: archive
+            },{
+            path: '/messageBoard',
+            name: 'messageBoard',
+            component: messageBoard
+            }
         ]
     }
 ]

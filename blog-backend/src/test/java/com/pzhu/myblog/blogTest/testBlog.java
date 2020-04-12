@@ -13,11 +13,14 @@ import com.pzhu.myblog.project.blog.service.BlogCategoryService;
 import com.pzhu.myblog.project.blog.service.BlogTagService;
 import com.pzhu.myblog.project.blog.vo.BlogArticleVO;
 import com.pzhu.myblog.project.blog.vo.TagDetail;
+import com.pzhu.myblog.project.frontend.domain.Archive;
+import com.pzhu.myblog.project.frontend.service.FrontendService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -48,6 +51,11 @@ public class testBlog {
     @Autowired
     private BlogCategoryService blogCategoryService;
 
+    @Autowired
+    private FrontendService frontendService;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     @Test
     public void testSelect(){
         log.info("开始查询");
@@ -110,5 +118,16 @@ public class testBlog {
         String sendPost = HttpUtils.sendPost("http://ip.taobao.com/service/getIpInfo.php", "ip=" + "101.206.167.17");
         JSONObject obj = JSONObject.parseObject(sendPost);
         System.out.println(obj.toString());
+    }
+
+    @Test
+    public void  testArchive(){
+        List<Archive> archives = frontendService.archiveList();
+        System.out.println(archives);
+    }
+
+    @Test
+    public void  mima(){
+        System.out.println(passwordEncoder.encode("123456"));
     }
 }

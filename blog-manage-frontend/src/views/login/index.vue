@@ -45,7 +45,7 @@
 
       <div class="tips">
         <span style="margin-right:20px;">用户名: admin</span>
-        <span> 密码: any</span>
+        <span> 密码: 123456</span>
       </div>
 
     </el-form>

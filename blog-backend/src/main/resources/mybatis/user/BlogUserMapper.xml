@@ -32,6 +32,7 @@
      CASE user_type
       WHEN '1' THEN '管理员'
       WHEN '2' THEN '普通用户'
+      WHEN '3' THEN '超级管理员'
       ELSE '未定义'
       END AS user_type,
      about, create_time,
