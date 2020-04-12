@@ -1,6 +1,8 @@
 
 # MyBlogPlus
-   
+![IDE](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-brightgreen.svg) ![Java](https://img.shields.io/badge/Java-1.8-blue.svg)
+![Database](https://img.shields.io/badge/Database-MySQL-lightgrey.svg)
+       
 - 毕业设计💼
 - OAuth2.0 🔒
 - SpringBoot框架🎨
